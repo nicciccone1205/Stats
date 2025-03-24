@@ -87,13 +87,13 @@ function getRange(numbers) {
 * @returns {number[]} the even numbers in the array
 */
 function getEvens(numbers) {
-    let count = 0;
+    const evens = [];
     for (let i = 0; i < getLength(numbers); i++) {
         if (numbers[i] % 2 === 0) {
-            count++;
+            evens.push(numbers[i]);
         }
     }
-    return count;
+    return evens;
   }
   
 /**
@@ -101,11 +101,11 @@ function getEvens(numbers) {
 * @returns {number[]} the odd numbers in the array
 */
 function getOdds(numbers) {
-    let count = 0;
+    const odds = [];
     for (let i = 0; i < getLength(numbers); i++) {
         if (numbers[i] % 2 !== 0) {
-            count++;
+            odds.push(numbers[i]);
         }
     }
-    return count;
+    return odds;
   }
